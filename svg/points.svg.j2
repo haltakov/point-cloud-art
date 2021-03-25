@@ -1,0 +1,15 @@
+<svg viewBox="0 0 {{ width }} {{ height*1.2 }}" xmlns="http://www.w3.org/2000/svg">
+    {% for c in coordinates %}
+    <circle cx="{{ c[0] }}" cy="{{ height - c[1] }}" id="{{ loop.index-1 }}" r="2"/>
+    {% endfor %}
+
+    <text x="20" y="height+height*1.1" class="color: #000000;">1 2 3 4 5 6 7 8 9 0</text>
+
+    <script type="text/javascript"><![CDATA[
+
+
+    features = {{ features }}
+
+    {% include 'point_cloud.js' %}
+    ]]></script>
+</svg>
