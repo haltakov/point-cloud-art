@@ -1,1 +1,5 @@
 .venv
+point_cloud/*.js
+point_cloud/*.css
+point_cloud/*.html
+.DS_Store

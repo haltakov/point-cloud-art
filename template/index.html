@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ project_name }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        {% if single_file %}
+        <script>
+            {% include "plotly-basic.min.js" %}
+        </script>
+        {% else %}
+        <script src="plotly-basic.min.js"></script>
+        {% endif %} {% if single_file %}
+        <style>
+            {% include "points.css" %}
+        </style>
+        {% else %}
+        <link rel="stylesheet" href="points.css" />
+        {% endif %}
+    </head>
+    <body>
+        <div id="points"></div>
+
+        <form id="codeForm">
+            <p>Enter 10 digit code</p>
+            <input type="text" id="code" placeholder="Enter code" required pattern="[0-9]{10}" />
+            <br />
+            <input type="submit" id="enterCodeButton" value="Enter" />
+        </form>
+
+        {% if single_file %}
+        <script>
+            {% include "p.js" %}
+        </script>
+        {% else %}
+        <script src="p.js"></script>
+        {% endif %} {% if single_file %}
+        <script>
+            {% include "points.js" %}
+        </script>
+        {% else %}
+        <script src="points.js"></script>
+        {% endif %}
+    </body>
+</html>

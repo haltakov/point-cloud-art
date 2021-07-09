@@ -1,0 +1,44 @@
+body {
+    background-color: #002776;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+form {
+    margin: 20px auto;
+    text-align: center;
+    color: #ffffff;
+}
+#points {
+    margin: 30px auto 0px;
+    width: 300px;
+    height: 300px;
+}
+#code {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+#code:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #points {
+        width: 512px;
+        height: 512px;
+    }
+}
+
+#enterCodeButton {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #ffffff;
+    margin-top: 20px;
+}
