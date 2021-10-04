@@ -1,7 +1,5 @@
 # Point Cloud Art
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/haltakov/point-cloud-art/blob/main/generate_2d_point_cloud.ipynb)
-
 Create point clouds containing hidden images using machine learning inspired techniques. An example can be found here: [https://haltakov.net/point-cloud-brazil/](https://haltakov.net/point-cloud-brazil/). Use the follwing codes to see the first 3 images. There are 3 more that you can try finidng yourself :)
 - 8198399457
 - 6674004952
