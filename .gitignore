@@ -1,5 +1,5 @@
 .venv
-point_cloud/*.js
-point_cloud/*.css
-point_cloud/*.html
+output/*.js
+output/*.css
+output/*.html
 .DS_Store
